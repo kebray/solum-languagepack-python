@@ -1,8 +1,6 @@
-FROM ubuntu:precise
-MAINTAINER Murali Allada <murali.allada@rackspace.com>
+FROM orchardup/php5
+MAINTAINER Keith Bray <kebray@gmail.com>
 
 RUN apt-get -yqq update
-RUN apt-get -yqq install python-pip
-RUN apt-get -yqq install python-dev
 
 ADD build.sh /solum/bin/
